@@ -1,0 +1,20 @@
+.button {
+    width: 260px;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: #f4e04d; /* світло-жовтий колір фону */
+    color: #333; /* темний колір тексту */
+    font-family: 'Courier New', Courier, monospace; /* моноширинний шрифт */
+    font-size: 16px;
+    border: 2px solid #333; /* темний колір рамки */
+    padding: 10px 20px;
+    text-transform: uppercase; /* всі літери великі */
+    letter-spacing: 2px; /* інтервал між літерами */
+    box-shadow: 4px 4px 0 #333; /* тінь для ефекту об'єму */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+        background-color: #e6c134; /* трохи темніший жовтий при наведенні */
+        box-shadow: 2px 2px 0 #333;
+    }
+}

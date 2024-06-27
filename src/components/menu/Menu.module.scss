@@ -1,0 +1,60 @@
+.menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    &__ship {
+        width: 30%;
+        animation: ship 10s infinite linear;
+    }
+    &__body {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+    }
+    &__info {
+        width: 300px;
+    }
+    &__title {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 36px;
+        text-align: center;
+        width: 100%;
+        color: #f4e04d;
+        text-shadow: 4px 4px 3px #333;
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 2pxж;
+    }
+    &__buttons {
+        width: 100%;
+        margin: 20px;
+    }
+}
+
+@keyframes ship {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    15% {
+        transform: translate(10px, 5px);
+    }
+    25% {
+        transform: translate(10px, 0px);
+    }
+    35% {
+        transform: translate(5px, -10px);
+    }
+    50% {
+        transform: translate(-5px, 10px);
+    }
+    75% {
+        transform: translate(-15px, 0px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
